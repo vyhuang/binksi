@@ -5947,7 +5947,7 @@ body {
 
     </style>
     <style id="main-style">:root {
-    --button-color: #ffd800;
+    --button-color: #C25C5C;
 
     /** diagonal stripes for showing clearly transparent pixels of the paint area */
     --trans-color-1: rgb(32, 32, 32);
@@ -5981,7 +5981,7 @@ body {
     align-items: center;
 
     background: black;
-    color: white;
+    color: black;
 }
 
 #editor {
@@ -6002,7 +6002,7 @@ html[data-remix-generation="0"] [data-remix-only] {
     display: flex; flex-direction: column;
     padding: 1em; gap: 1em;
 
-    background: #367b6b;
+    background: #ECECEC;
     border-radius: 2em;
 }
 
@@ -6126,9 +6126,10 @@ button {
 
     border: none;
     border-radius: 1em;
+    color: white;
     background-color: var(--button-color);
 
-    font-weight: bold;
+    font-weight: 400;
 
     display: flex;
     justify-content: center;
@@ -6138,7 +6139,7 @@ button {
 }
 
 button:active {
-    filter: invert();
+    background-color: #972f26;
 }
 
 button:disabled {
@@ -6383,8 +6384,8 @@ input[type="text"], textarea {
 
     </style>
     <style data-editor-only="data-editor-only">:root {
-    --button-color: #ffd800;
-    --frame-color: #367b6b;
+    --button-color: #C25C5C;
+    --frame-color: #ECECEC;
 }
 
 body {
@@ -6489,7 +6490,7 @@ input[type="text"], textarea {
 }
 
 #mode-select.radio-select input[type="radio"]:checked {
-    background: #367b6b;
+    background: #972f26;
 }
 
 #undo-row {
@@ -6972,11 +6973,11 @@ a {
 }
 
 a:hover {
-    color: white;
+    color: var(--button-color)
 }
 
 a:visited {
-    color: #cef0df;
+    color: var(--button-color);
 }
 
 em {
@@ -7597,7 +7598,7 @@ label.toggle#tile-grid {
                   <button name="reset" title="reset project to default">reset to default</button>
                 </div>
               </p>
-              <h2>binksi -- 0.1 (2021/12/21)</h2>
+              <h2>binksi -- 0.1 (2021/12/23)</h2>
               <p>propulse your <a href="https://kool.tools/bipsi/user-guide.pdf">bipsi</a> games with narration engine <a href="https://www.inklestudios.com/ink/">ink</a></p>
               <p>
                 quick links to : <a href="https://kool.tools/bipsi/user-guide.pdf">bipsi user guide</a>,  <a href="https://kool.tools/bipsi/scripting-guide.pdf">bipsi scripting guide</a>,
