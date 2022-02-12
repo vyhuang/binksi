@@ -16,7 +16,7 @@
   },
   "scripts": {
     "watch": "pug -P -w -o dist -b src src/index.pug",
-    "editor": "light-server-pug -o -s dist -w 'src/**, data/** # yarn build'",
+    "editor": "light-server-pug -o -s dist -w \".\\src\\**, .\\data\\** # yarn build\"",
     "ink": "inklecate -o data/story.ink.json data/story.ink && node build-scripts/cleanJson.js data/story.ink.json",
     "build": "pug -P -o dist -b src src/index.pug",
     "build:empty": "pug -P -o dist -b src src/index.pug && node build-scripts/makeEmptyEditor.js dist/index.html dist/index.html",
